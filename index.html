@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Vipin Mishra </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+      <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="style/style.css">
+      
+   </head>
+   <body>
+      <div class="container">
+         <div class="banner">
+            <div class="main_box">
+               <div class="left_div">
+                  <img src="image/logo@2x.png"/>
+               </div>
+               <div class="right_div">
+                  <img src="image/chrome.png"/>
+               </div>
+               <div class="banner_heading">
+                  <h1> Breaking News, News Coverage, Current Events & More </h1>
+                  <div class="banner_text">
+                     <p>Install NewsTrackr to access the latest local, national & world news directly on your New Tab, along with web search.</p>
+                  </div>
+                  <div class="banner_button">
+                     <button><a class="continue" onclick="return showPopup()"> CONTINUE </a></button>
+                  </div>
+               </div>
+            </div>
+            <ul class="banner_icon">
+               <li>
+                  <img src="image/shape_icon.svg">
+                  <p> Business News <span class="arrow">>></span> </p>
+               </li>
+               <li>
+                  <img src="image/shape_2.svg">
+                  <p> Typeface<span class="arrow">>></span> </p>
+               </li>
+               <li>
+                  <img src="image/shape_3.svg">
+                  <p> Enterntainment <span class="arrow">>></span> </p>
+               </li>
+               <li>
+                  <img src="image/shape_4.svg">
+                  <p> Sports <span class="arrow">>></span>  </p>
+               </li>
+               <li>
+                  <img src="image/shape_5.svg">
+                  <p> Health <span class="arrow">>></span>
+               </li>
+            </ul>
+         </div>
+         <div class="bookMark">
+         	<div class="book_left">
+               <a href="#"><img src="image/social_icon.png"></a>
+               <a href="#"><img src="image/social_two.png"></a>
+         		<div class="book_cont">
+         			<h3>Share or Bookmark News Articles</h3>
+         			<p>With infinite news reports released daily, you’re bound to miss important information. For when you don’t have the time to read full articles, NewsTrackr allows you to bookmark articles you would want to read at leisure.. You can also share articles online.</p>
+         			<a class="ab_button" href="#">Continue</a>
+         		</div>
+         	</div>
+         	<div class="book_right">
+         		<div class="book_inner">
+         			<img class="white_box" src="image/right-corporate.jpg">
+         			<span> WORLD </span>
+         			<h2> Austria Says it won't sing UN global migration pact </h2>
+                  <p class="lorem">BERLIN(AP) - The Austrian government said Wednesday that it won't sign a g.... </p>
+                  <ul class="tampa">
+                  <li>Tampa Bay Times | 22 mins ago </li>
+                  <li><a href="#"><img src="image/shape-15_2@2x.png"></a></li>
+                  <li><a href="#"><img src="image/shape-16@2x.png"></a></li>
+               </ul>
+         		</div>
+         	</div>
+         </div>
+         <div class="main_watch">
+       <div class="watch">
+         <img src="image/shutterstock.png">
+         <h2> Watch <br>  News Coverage</h2>
+         <p>Want to catch up on world events? Stay updated stories from across the globe. 
+         By adding NewsTrackr to your New Tab, you can stream live news stories and watch news videos conveniently</p>
+         <a class="ab_button" href="#">Continue</a>
+       </div>
+       <div class="watch_one">
+         <img src="image/shutterstock-2.png">
+         <h2> Personalized News  <br>Recommendations </h2>
+         <p>Interested in political news but not entertainment news? NewsTrackr traitors a unique and personalized newsfeed, 
+            based on your interests and preferences. Discover quality content from around the web.</p>
+            <a class="ab_button" href="#">Continue</a>
+      </div>
+   </div>
+   <div class="footer">
+   <img class="shape" src="image/shape-17.png">
+   <h3> Add NewsTrackr To Your New Tab Now! </h3>
+   <p> Free installation.<br/> No settings or customizations required.</p>
+   <a class="footer_button" href="#">Continue</a>
+   </div>
+   <div class="last_footer">
+   <div class="last_line">
+   <ul class="pri">
+    <li><a href="#">Privacy Policy  </a><span>|</span></li>
+    <li><a href="#"> EULA  </a><span>|</span></li>
+    <li><a href="#">Endorsement Disclaimer and DMCA Policy  </a><span>|</span></li>
+    <li><a href="#"> Contact Us  </a><span>|</span></li> 
+    <li><a href="#"> Uninstall</a></li>
+   </ul>
+    <p> All trademarks are the property of their respective owners. No affiliation or endorsement is intended or implied.</p>
+   </div>
+
+   </div>
+
+
+      </div>
+      <div id="popup" class="hidden">
+         <h3>Thank you for downloading.</h3>
+      </div>
+      <div id="not_support" class="hidden">
+         <h3>Browser not supported.</h3>
+      </div>
+      <script tyWatch 
+      pe="text/javascript">
+      function showPopup() {
+         var ele = document.getElementById('popup');
+         // alert(navigator.userAgent);
+         if(navigator.userAgent.indexOf("Edge") !== -1){
+            // console.log(document.getElementById('popup'));
+            ele.classList.add("edge");
+            ele.style.left = (window.outerWidth/2 - ele.offsetWidth/2) + 'px';
+            ele.classList.remove("hidden");
+         } else if(navigator.userAgent.indexOf("Safari") !== -1 || navigator.userAgent.indexOf("Chrome") !== -1) {
+            ele.classList.add("chrome");
+            ele.classList.remove("hidden");
+         } else if(navigator.userAgent.indexOf("Mozilla") !== -1 || navigator.userAgent.indexOf("Firefox") !== -1){
+            ele.classList.add("firefox");
+            ele.classList.remove("hidden");
+         } else {
+            document.getElementById('not_support').classList.remove("hidden");
+         }
+         return false;
+      }
+      </script>
+   </body>
+</html>
