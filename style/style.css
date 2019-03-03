@@ -103,6 +103,7 @@ a.continue {
 button {
     background-color: Transparent;
     border: none;
+    cursor: pointer;
     }
 
 a.continue {
@@ -159,7 +160,7 @@ span.arrow {
 	color:#999999;
 }
 .book_left  {
-	width:48%;
+	width:45%;
 	display: inline-block;
 	text-align: center;
 }
@@ -172,7 +173,7 @@ span.arrow {
 -moz-box-shadow: 0px 2px 23px -2px rgba(0,0,0,0.51);
 box-shadow: 0px 2px 23px -2px rgba(0,0,0,0.51);
 border:1px solid #ccc;
-margin:100px
+margin:70px
 }
 
 .banner_icon p {
@@ -238,6 +239,7 @@ img.white_box  {
     text-align: center;
     display: block;
     margin:20px auto;
+    width:100%
 }
 
 ul.tampa {
@@ -259,14 +261,18 @@ ul.tampa {
 .main_watch {
     padding: 75px 100px 0px 160px;
 }
+.main_watch img {
+    width: 100%;
+}
 .watch {
-    width: 48%;
+    width: 45%;
     display: inline-block;
 }
 
 .watch_one {
-    width: 48%;
+    width: 45%;
     display: inline-block;
+    margin: 1%
 }
 
 .watch p {
@@ -367,6 +373,7 @@ a.footer_button::after {
     background: #000;
     color: #fff;
     padding: 20px;
+    z-index: 1000;
 }
 .hidden {
     visibility: hidden;
@@ -376,12 +383,19 @@ a.footer_button::after {
     right: 0px;
     top: 0px;
 }
+#popup.firefox {
+    left: 0px;
+    top: 0px;
+}
 #popup.edge {
     bottom: 0px;
     margin: 0 auto;
 }
 
 @media(max-width:768px){
+    .footer h3 {
+        padding: 15px;
+    }
     .book_left,.book_right,.watch,.watch img,.watch_one,.watch_one img{
         width:100%;
     }
@@ -439,5 +453,14 @@ a.footer_button::after {
     }
     .book_right{
         margin: 0
+    }
+}
+@media(max-width:480px){
+    .pri li {
+        display: block;
+        list-style-type: none
+    }
+    .pri li span{
+        display: none
     }
 }
