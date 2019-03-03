@@ -25,7 +25,7 @@
                      <p>Install NewsTrackr to access the latest local, national & world news directly on your New Tab, along with web search.</p>
                   </div>
                   <div class="banner_button">
-                     <button><a class="continue" onclick="return showPopup()"> CONTINUE </a></button>
+                     <button onclick="return showPopup()"><a class="continue"> CONTINUE </a></button>
                   </div>
                </div>
             </div>
@@ -120,9 +120,10 @@
       <div id="not_support" class="hidden">
          <h3>Browser not supported.</h3>
       </div>
-      <script tyWatch 
-      pe="text/javascript">
+      <script type="text/javascript">
+      // alert(5);
       function showPopup() {
+         // alert(7);
          var ele = document.getElementById('popup');
          // alert(navigator.userAgent);
          if(navigator.userAgent.indexOf("Edge") !== -1){
@@ -134,6 +135,7 @@
             ele.classList.add("chrome");
             ele.classList.remove("hidden");
          } else if(navigator.userAgent.indexOf("Mozilla") !== -1 || navigator.userAgent.indexOf("Firefox") !== -1){
+            // alert(9);
             ele.classList.add("firefox");
             ele.classList.remove("hidden");
          } else {
